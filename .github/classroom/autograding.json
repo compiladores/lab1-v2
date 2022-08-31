@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "checksum tests",
+      "setup": "",
+      "run": "sha256sum -c shasums.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "shasum shasums.txt",
+      "setup": "",
+      "run": " echo \"75ba68bee191c66c34a9aef92f1ff857ec368091cb253632521c0efd7b2d50d7  shasums.txt\" | sha256sum -c -",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "run tests normal",
+      "setup": "",
+      "run": "deno test 00 01 02 03",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test 99",
+      "setup": "",
+      "run": "deno test 99",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "fecha de ejecucion de este CI previa a la fecha de entrega",
+      "setup": "",
+      "run": "TZ='America/Argentina/Buenos_Aires' test (date  +%s) -lt (date -d \"2022-09-07\" +%s)",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
