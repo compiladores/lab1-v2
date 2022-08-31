@@ -40,7 +40,7 @@ La evaluación es objetiva. Al presentar el laboratorio se dará una fecha recom
 Al entregar el laboratorio se puntuará de la siguiente forma.
 |Parámetro|puntaje|
 |-|-|
-|se entregó el TP|4|
+|se entregó el TP|6|
 |El último commit del PR tiene fecha previa a la recomendada|+2|
-|Se agregaron 5 tests|+2|
 |Se resolvió el ejercicio 99|+2|
+|Se resolvió el ejercicio 01 en clase|+1 (revisado manualmente)|
